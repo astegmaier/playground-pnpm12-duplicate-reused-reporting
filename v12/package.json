@@ -1,0 +1,8 @@
+{
+  "name": "pnpm-duplicate-reused-reporting",
+  "private": true,
+  "packageManager": "pnpm@12.5.1",
+  "dependencies": {
+    "express": "4.21.2"
+  }
+}
