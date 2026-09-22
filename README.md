@@ -1,5 +1,7 @@
 # pnpm 12 reports every reused package twice during `pnpm dedupe`
 
+This repository accompanies [pnpm/pnpm#15303](https://github.com/pnpm/pnpm/issues/15303).
+
 This repository demonstrates a pnpm 12 progress-reporting bug in a warm full `pnpm dedupe` run. The bug reproduces in every stable pnpm 12 minor release tested, from 12.0 through the current 12.6 release.
 
 The fixture contains two equivalent projects:
