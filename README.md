@@ -11,8 +11,6 @@ Both projects depend only on `express@4.21.2`. That resolves to 69 packages in e
 
 ## Run the reproduction
 
-Requirements: Node.js and pnpm installed directly, not through Corepack. pnpm reads each fixture's `packageManager` field and runs the requested version.
-
 From the repository root, run pnpm 11:
 
 ```sh
