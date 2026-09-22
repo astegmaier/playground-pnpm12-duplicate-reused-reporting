@@ -1,6 +1,6 @@
 # pnpm 12 reports every reused package twice during `pnpm dedupe`
 
-This repository demonstrates a pnpm 12.5.1 progress-reporting bug in a warm full `pnpm dedupe` run.
+This repository demonstrates a pnpm 12 progress-reporting bug in a warm full `pnpm dedupe` run. The bug reproduces in every stable pnpm 12 minor release tested, from 12.0 through the current 12.6 release.
 
 The fixture contains two equivalent projects:
 
@@ -44,6 +44,8 @@ Progress: resolved 69, reused 138, downloaded 0, added 0, done
 ```
 
 The pnpm 12 counter reports twice as many reused packages as were resolved.
+
+Although the checked-in fixture uses pnpm 12.5.1, the same `resolved 69, reused 138` result was reproduced across the pnpm 12 release line.
 
 ## Raw progress events
 
